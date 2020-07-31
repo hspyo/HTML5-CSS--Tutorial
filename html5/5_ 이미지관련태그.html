@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이<미지 관련 태그</title>
+</head>
+<body>
+  <!-- 
+    <img> : 웹 페이지에 사진이나 그림을 삽입할 때 사용하는 태그
+    <img src="삽입하고자하는 이미지의 경로" alt="이미지 설명 문구">
+   -->
+
+   <h3>src 속성</h3>
+   <img src="resources/image/river1.PNG">
+
+   <hr>
+
+   <h3>alt 속성</h3>
+   <img src="resources/image/river1.PNG" alt="호수사진입니다.">
+   <p>
+     - 사진 로딩이 안되었을 때 대체 텍스트 문구 <br>
+     - 시각 장애인들을 위한 스크린리더에서 이미지를 읽어주는 설명
+   </p>
+
+   <hr>
+
+   <h3>width와 height 속성</h3>
+   <p>
+      이미지의 가로, 세로길이 조정 가능 <br>
+      고정 길이 (px), 가변 길이 (%)로 지정 가능
+   </p>
+
+   <h4>고정 크기 단위(px) : 화면사이즈가 변해도 이미지 크기 그대로</h4>
+   <img src="resources/image/flower1.PNG" alt="" width="200px" height="150px">
+   <img src="resources/image/flower2.PNG" alt="" width="200px" height="150px">
+   <img src="resources/image/flower3.PNG" alt="" width="200px" height="150px">
+   <img src="resources/image/flower4.PNG" alt="" width="200px" height="150px">
+   <img src="resources/image/flower5.PNG" alt="" width="200" height="150"> <!--사실 기본값이 px-->
+
+   <h4>가변 크기 단위(%) : 화면사이즈 혹은 기준 사이즈에 따라 이미지 크기 변동</h4>
+   <img src="resources/image/flower1.PNG" alt="" width="15%" height="150px">
+   <img src="resources/image/flower2.PNG" alt="" width="15%" height="150px">
+   <img src="resources/image/flower3.PNG" alt="" width="15%" height="150px">
+   <img src="resources/image/flower4.PNG" alt="" width="15%" height="150px">
+   <img src="resources/image/flower5.PNG" alt="" width="15%" height="150"> <!--사실 기본값이 px-->
+
+
+
+
+
+</body>
+</html>
