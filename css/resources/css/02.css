@@ -1,0 +1,122 @@
+ /* CSS 영역  */
+
+div[name = name1] {
+  background-color: orangered;
+}
+
+/* div중 name속성값에 name1이 포함되어있는 태그 (띄어쓰기(단어) 구분)*/
+div[name~=name1] {
+  background-color: yellow;
+}
+
+/* div중 class속성값이 class로 시작되는 태그 (-로 구분)*/
+div[class |= class]{
+  background-color: cyan;
+}
+
+/* div중 name속성값이 na로 시작되는 태그 */
+div[name^=na]{
+  background-color: blue;
+}
+
+/* div중 class속성값이 class로 끝나는 태그 */
+div[class$=class] {
+  color: white;
+}
+
+/* div중 class 속성값에 i가 포함되어있는 태그 */
+div[class*=i] {
+  background-color: yellow;
+  color: red;
+}
+
+/* 응용 */
+/* class속성값이 div-class인 애들 중 name 속성값에 name3가 포함되어 있는 태그 */
+.div-class[name~=name3] {
+  background-color: pink;
+}
+
+/* ------------------------------- */
+
+/* 자손선택자와 후손선택자 */
+#test1>h4{
+  background-color: orangered;
+}
+
+#test1>ul>li{
+  background-color: cyan;
+}
+
+/* a b : a요소의 후손(모든 하위요소)들 중에 b요소만을 선택 */
+#test1 li {
+  color: red;
+}
+
+/* ----------------------------------------------------- */
+
+#div-test{
+  background-color: red;
+}
+
+/* ---------- 동위 선택자 ---------- */
+/* a+b : a요소 뒤에 b요소 하나만을 선택 */
+#div-test+div{
+  background-color: yellow;
+}
+
+/* a~b : a요소 뒤에 모든 b요소 다 선택 */
+#div-test~div{
+  background-color: green;
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+
+/* ------------반응 선택자 ----------- */
+#active-test:active{
+  background-color: yellow;
+  color: red;
+}
+
+#hover-test:hover{
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+}
+
+/* -------------------- 상태 선택자 --------------- */
+
+input[type=checkbox]:checked{
+  width: 20px;
+  height: 20px;
+  /* 이 스타일 해당 input요소에 부여가됨 */
+}
+input[type=checkbox]:checked+label{
+  font-size: 20px;
+  /* 이 스타일은 checked가 된 input요소 바로 뒤에 label요소에 부여*/
+}
+
+/* ---------------------------------- */
+
+input[name=userId]:focus{
+  background-color: black;
+  color: white;
+}
+
+
+input[name=passPwd]:focus{
+  background-color: black;
+  color: white;
+}
+
+input:focus{
+  background-color: yellow;
+}
+
+input:focus{
+  background-color: ;
+}
+
+
+
+
