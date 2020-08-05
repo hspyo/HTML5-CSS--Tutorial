@@ -25,3 +25,28 @@
 #ta3{text-align:center}
 #ta4{text-align:justify}
 
+/* ----------------------------- */
+
+.shadow{
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#ts1{
+  color: orangered;
+  text-shadow: 5px 5px yellow;
+}
+
+#ts2{
+  color: white;
+  text-shadow: 0px 0px 10px black;
+}
+
+#ts3{
+  color: white;
+  text-shadow: 10px 10px 20px yellowgreen;
+}
+
+#ts4{
+  text-shadow: 0px 0px 4px grey, 0px -5px 4px yellow, 0px -10px 7px orange, 0px -15px 13px red ;
+}

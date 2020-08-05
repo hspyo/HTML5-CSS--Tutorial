@@ -1,0 +1,40 @@
+.size-test {
+  border: 2px solid red;
+}
+
+#test1{
+  width: 50%;
+  height: 200px;
+}
+
+#test2{
+  width: 50%;
+  height: 200px;
+}
+
+.block {
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+}
+
+.area1{background: red;}
+.area2{background: orange;}
+.area3{background: blue;}
+.area4{background: yellow;}
+.area5{background: yellowgreen;}
+
+.block-test1{
+  /* display: inline; 단순히 inline만 하면 width,height 무시됨 */
+  display: inline; 
+}
+
+
+.block-test2{
+  /* width와 height가 유지된다. */
+  display: inline-block; 
+}
+
+.block-test3{
+  display: block;
+}

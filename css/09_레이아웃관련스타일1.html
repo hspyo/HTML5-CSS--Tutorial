@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 관련 스타일</title>
+  <link rel="stylesheet" href="resources/css/09.css">
+</head>
+<body>
+  
+  <h1>레이아웃 관련 스타일1</h1>
+
+  <h3>width, height</h3>
+  <p>content영역(내용이 차지하고)의 크기를 조절하는 속성</p>
+
+  <h4>고정 크기</h4>
+  <div id="test1" class="size-test">
+
+  <h4>가변 크기</h4>
+  <div id="test2" class="size-test"></div>
+
+  <hr>
+
+  <h3>화면 배치 방법 변경</h3>
+  <p>블럭요소와 인라인요소와 속성을 변경해서 배치 방식을 변경할 수 있음</p>
+
+  <h4>블럭요소를 인라인요소로 변경</h4>
+  <pre>
+    선택자 {
+      display: inline;
+    }
+  </pre>
+  
+  <div class="block area1 block-test1">영역1</div>
+  <div class="block area2 block-test1">영역2</div>
+  <div class="block area3 block-test1">영역3</div>
+  <div class="block area4 block-test1">영역4</div>
+  <div class="block area5 block-test1">영역5</div>
+
+  <br><br><br>
+
+  <b>display:inline-block 방식</b>
+  <br>
+
+  <div class="block area1 block-test2">영역1</div>
+  <div class="block area2 block-test2">영역2</div>
+  <div class="block area3 block-test2">영역3</div>
+  <div class="block area4 block-test2">영역4</div>
+  <div class="block area5 block-test2">영역5</div>
+
+  <br>
+  <b>display:inline-block 하게 되면 옆으로 영역배치되면서 width,height 속성 유지</b>
+
+  <h4>인라인요소를 블럭요소로 변경</h4>
+
+  <b>display:block 방식</b>
+
+  <span class="block area1 block-test3">영역1</span>
+  <span class="block area3 block-test3">영역3</span>
+  <span class="block area4 block-test3">영역4</span>
+  <span class="block area5 block-test3">영역5</span>
+
+</body>
+</html>
